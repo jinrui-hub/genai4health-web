@@ -1,0 +1,36 @@
+import { Event } from './types';
+
+export const formatDate = (dateString: string): string => {
+  const options: Intl.DateTimeFormatOptions = { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  };
+  return new Date(dateString).toLocaleDateString('en-US', options);
+};
+
+export const generateGoogleCalendarUrl = (event: Event): string => {
+  const startDate = new Date(event.date);
+  const endDate = new Date(startDate.getTime() + 60 * 60 * 1000); // Assume 1 hour duration
+
+  const formatDateForGoogle = (date: Date) => {
+    return date.toISOString().replace(/-|:|\.\d\d\d/g, "");
+  };
+
+  const start = formatDateForGoogle(startDate);
+  const end = formatDateForGoogle(endDate);
+
+  const details = `Speaker: ${event.speaker.name} (${event.speaker.affiliation})\n\nAbstract: ${event.abstract}`;
+  
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: `GenAI4Health: ${event.title}`,
+    dates: `${start}/${end}`,
+    details: details,
+    location: event.location || 'Online',
+  });
+
+  return `https://www.google.com/calendar/render?${params.toString()}`;
+};
