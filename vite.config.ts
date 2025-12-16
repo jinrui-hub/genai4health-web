@@ -4,7 +4,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
-    const basePath = env.VITE_BASE_PATH || '/genai4health-community/';
+    // Default base path should match the GitHub Pages repo name.
+    // Override via VITE_BASE_PATH if deploying elsewhere/custom domain.
+    const basePath = env.VITE_BASE_PATH || '/genai4health-web/';
     return {
       base: basePath,
       server: {

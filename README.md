@@ -35,7 +35,7 @@ npm run dev
 我们使用 `gh-pages` 包将 `dist/` 推送到 `gh-pages` 分支。
 
 1) 设置 base 路径  
-`vite.config.ts` 读取环境变量 `VITE_BASE_PATH`，默认值 `/genai4health-community/`。如果你在自己的仓库或自定义域名部署，可在 `.env.local` 中覆盖：
+`vite.config.ts` 读取环境变量 `VITE_BASE_PATH`，默认值 `/genai4health-web/`（与你的仓库名一致）。如果你在自己的仓库或自定义域名部署，可在 `.env.local` 中覆盖：
 ```
 VITE_BASE_PATH=/
 ```
@@ -50,7 +50,7 @@ npm run deploy
 在 GitHub 仓库 Settings → Pages：  
 - Source: 分支 `gh-pages`  
 - Folder: `/ (root)`  
-等待几分钟后访问 `https://<用户名>.github.io/genai4health-community/`。
+等待几分钟后访问 `https://<用户名>.github.io/genai4health-web/`。
 
 > 如果刷新出现 404，可在构建后将 `dist/index.html` 复制为 `dist/404.html`（gh-pages 将一并发布）。
 
