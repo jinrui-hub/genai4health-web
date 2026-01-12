@@ -26,7 +26,7 @@ export const generateGoogleCalendarUrl = (event: Event): string => {
   
   const params = new URLSearchParams({
     action: 'TEMPLATE',
-    text: `GenAI4Health: ${event.title}`,
+    text: `AI4Health Association: ${event.title}`,
     dates: `${start}/${end}`,
     details: details,
     location: event.location || 'Online',

@@ -44,10 +44,10 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
           className="cursor-pointer flex items-center gap-2 group"
         >
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
-            G
+            AI
           </div>
           <span className="font-semibold text-xl tracking-tight text-slate-900">
-            GenAI4Health
+            AI4Health Association
           </span>
         </div>
 

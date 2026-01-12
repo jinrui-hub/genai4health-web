@@ -9,10 +9,10 @@ const About: React.FC = () => {
         
         {/* Chairs */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Co-Chairs</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Chairs</h2>
           <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
           <p className="mt-6 text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Strategic direction for GenAI4Health is led by our co-chairs.
+            Strategic direction for AI4Health Association is led by our chairs.
           </p>
           <div className="grid md:grid-cols-2 gap-8 mt-10">
             {CHAIRS.map((chair, idx) => (
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">Founding Members</h2>
           <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
           <p className="mt-6 text-lg text-slate-600 max-w-3xl leading-relaxed">
-            GenAI4Health is organized by leaders in the field from Stanford University and UT Austin, dedicated to fostering collaboration between AI researchers and medical practitioners.
+            AI4Health Association is organized by leaders in the field from Stanford University and UT Austin, dedicated to fostering collaboration between AI researchers and medical practitioners.
           </p>
         </div>
 
