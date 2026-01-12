@@ -1,19 +1,117 @@
 import { Event, EventType, Organizer, Workshop } from './types';
 
-export const ORGANIZERS: Organizer[] = [
+const asset = (relativePath: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  const normalizedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  const normalizedPath = relativePath.startsWith('/')
+    ? relativePath.slice(1)
+    : relativePath;
+  return `${normalizedBase}/${normalizedPath}`;
+};
+
+export const CHAIRS: Organizer[] = [
   {
-    name: "Ehsan Adeli",
-    title: "Assistant Professor",
-    university: "Stanford University",
-    imageUrl: "https://picsum.photos/400/400?grayscale", // Replace with real photo in prod
-    website: "https://stanford.edu"
+    name: "Jinrui Fang",
+    title: "PhD Student",
+    university: "UT Austin",
+    imageUrl: asset('founding-members/jinrui.jpg'),
+    website: "https://ischool.utexas.edu/profiles/jinrui-fang"
   },
+  {
+    name: "Tiange Xiang",
+    title: "PhD Student",
+    university: "Stanford University",
+    imageUrl: asset('founding-members/tiange.jpg'),
+    website: "https://tiangexiang.github.io/"
+  }, 
+    {
+    name: "Jiawei Xu",
+    title: "PhD Student",
+    university: "UT Austin",
+    imageUrl: asset('founding-members/jiaweixu.jpg'),
+    website: "https://jiaweixu98.github.io/"
+  }
+];
+
+export const ORGANIZERS: Organizer[] = [
   {
     name: "Ying Ding",
     title: "Bill & Lewis Suit Professor",
     university: "UT Austin",
-    imageUrl: "https://picsum.photos/401/401?grayscale", // Replace with real photo in prod
-    website: "https://utexas.edu"
+    imageUrl: asset('founding-members/YingDing.jpg'),
+    website: "https://ischool.utexas.edu/profiles/ying-ding"
+  },
+  {
+    name: "Ehsan Adeli",
+    title: "Assistant Professor",
+    university: "Stanford University",
+    imageUrl: asset('founding-members/ehsan.jpg'),
+    website: "https://profiles.stanford.edu/ehsan-adeli"
+  },
+  {
+    name: "Eric Topol",
+    title: "Chair",
+    university: "Scripps Research Translational Institute",
+    imageUrl: asset('founding-members/eric_topol.jpg'),
+    website: "https://www.scripps.edu/faculty/topol/"
+  },
+  {
+    name: "Suchi Saria",
+    title: "John C. Malone Associate Professor of Computer Science",
+    university: "Johns Hopkins University",
+    imageUrl: asset('founding-members/suchi-saria-2.jpg'),
+    website: "https://engineering.jhu.edu/faculty/suchi-saria/"
+  },
+  {
+    name: "Fei Wang",
+    title: "Associate Professor of Population Health Sciences",
+    university: "Weill Cornell Medicine",
+    imageUrl: asset('founding-members/FeiWang_1.jpeg'),
+    website: "https://gradschool.weill.cornell.edu/faculty/fei-wang"
+  },
+  {
+    name: "Haider Warraich",
+    title: "Senior Advisor",
+    university: "ARPA-H",
+    imageUrl: asset('founding-members/Haider_WarraichMD.jpg'),
+    website: "https://www.linkedin.com/in/haiderwarraich/"
+  },
+  {
+    name: "James Zou",
+    title: "Associate Professor of Biomedical Data Science",
+    university: "Stanford University",
+    imageUrl: asset('founding-members/zou.jpg'),
+    website: "https://www.james-zou.com/"
+  },
+
+  {
+    name: "Tianlong Chen",
+    title: "Assistant Professor",
+    university: "UNC-Chapel Hill",
+    imageUrl: asset('founding-members/tianlong-chen.jpg'),
+    website: "https://tianlong-chen.github.io/"
+  },
+
+  {
+    name: "Zakia Hammal",
+    title: "Associate Research Professor",
+    university: "Carnegie Mellon University",
+    imageUrl: asset('founding-members/zakia.jpg'),
+    website: "https://www.ri.cmu.edu/ri-faculty/zakia-hammal/"
+  },
+  {
+    name: "Sheng Liu",
+    title: "Postdoctoral Researcher",
+    university: "Stanford University",
+    imageUrl: asset('founding-members/shengliu.jpg'),
+    website: "https://shengliu66.github.io/"
+  },
+  {
+    name: "Gregory Holste",
+    title: "PhD Candidate",
+    university: "UT Austin",
+    imageUrl: asset('founding-members/Gregory.png'),
+    website: "https://www.gholste.me/"
   }
 ];
 

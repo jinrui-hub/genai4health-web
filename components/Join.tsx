@@ -57,7 +57,7 @@ const Join: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Call for Speakers</h3>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                We are actively seeking speakers for our monthly sessions. Whether you want to present your latest NeurIPS paper or nominate a colleague, we want to hear from you.
+                We are actively seeking speakers for our monthly sessions. Whether you want to present your latest work or nominate a colleague, we want to hear from you.
               </p>
               
               <div className="flex flex-col gap-3">
