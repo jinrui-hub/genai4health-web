@@ -185,7 +185,7 @@ export const EVENTS: Event[] = [
 ];
 
 export const LINKS = {
-  slack: "#",
+  slack: "https://join.slack.com/t/genaiforhealth/shared_invite/zt-3n3aewm9j-a91nqjPArIEIQQgIGUAVQA",
   mailingList: "#",
   speakerForm: "#"
 };
