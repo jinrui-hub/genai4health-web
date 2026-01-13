@@ -9,9 +9,9 @@ const Join: React.FC = () => {
         
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Become a Member</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Get Involved</h2>
             <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-lg">
-              Join a growing network of researchers, clinicians, and engineers pushing the boundaries of what's possible with Generative AI in healthcare.
+              Be part of a growing community bringing together diverse perspectives to explore, discuss, and shape the future of generative AI in healthcare.
             </p>
             
             <div className="space-y-4">
@@ -24,8 +24,8 @@ const Join: React.FC = () => {
                     <Slack size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">Join Slack Channel</h3>
-                    <p className="text-sm text-slate-400">Connect for daily discussions</p>
+                    <h3 className="font-bold text-lg">Join Our Slack Community</h3>
+                    <p className="text-sm text-slate-400">Connect with others through ongoing conversations, questions, and shared learning in a welcoming space.</p>
                   </div>
                 </div>
                 <ArrowRight className="text-slate-500 group-hover:text-white transition-colors" />
@@ -40,8 +40,8 @@ const Join: React.FC = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg">Subscribe to Mailing List</h3>
-                    <p className="text-sm text-slate-400">Get monthly updates and invites</p>
+                    <h3 className="font-bold text-lg">Subscribe to Our Mailing List</h3>
+                    <p className="text-sm text-slate-400">Stay informed with monthly updates, event invitations, and community news.</p>
                   </div>
                 </div>
                 <ArrowRight className="text-slate-500 group-hover:text-white transition-colors" />
@@ -57,7 +57,7 @@ const Join: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3">Call for Speakers</h3>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                We are actively seeking speakers for our monthly sessions. Whether you want to present your latest work or nominate a colleague, we want to hear from you.
+                We welcome proposals from across the community. Whether you'd like to share a project, an idea, or a perspective, or nominate someone else, we'd be glad to hear from you.
               </p>
               
               <div className="flex flex-col gap-3">

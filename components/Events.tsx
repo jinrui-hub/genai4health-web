@@ -24,9 +24,9 @@ const Events: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Community Schedule</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Events & Seminars</h2>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-            Monthly presentations featuring cutting-edge papers and distinguished speakers in the field.
+            Monthly seminars and special events featuring cutting-edge research and invited speakers in generative AI and healthcare.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ const Events: React.FC = () => {
                 activeTab === EventType.UPCOMING ? 'text-white shadow-md' : 'text-slate-500 hover:text-slate-700'
               }`}
             >
-              Upcoming Events
+              Upcoming Seminars
               {activeTab === EventType.UPCOMING && (
                 <div className="absolute inset-0 bg-slate-900 rounded-full -z-10 animate-fade-in" />
               )}
