@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
             AI
           </div>
           <span className="font-semibold text-xl tracking-tight text-slate-900">
-            AI4Health Association
+            AI4Health Club
           </span>
         </div>
 
