@@ -19,8 +19,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
   }, []);
 
   const navLinks = [
-    { id: 'about', label: 'About Us' },
     { id: 'schedule', label: 'Schedule' },
+    { id: 'about', label: 'About Us' },
     { id: 'join', label: 'Join Community' },
   ];
 

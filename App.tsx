@@ -39,7 +39,7 @@ function App() {
       { threshold: 0.3 } // Trigger when 30% of section is visible
     );
 
-    const sections = ['hero', 'about', 'schedule', 'workshops', 'join'];
+    const sections = ['hero', 'schedule', 'about', 'workshops', 'join'];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -58,8 +58,8 @@ function App() {
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <main>
         <Hero scrollToSection={scrollToSection} />
-        <About />
         <Events />
+        <About />
         <Workshops />
         <Join />
       </main>

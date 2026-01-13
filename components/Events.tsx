@@ -90,6 +90,12 @@ interface EventCardProps {
 
 const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) => {
   const isUpcoming = event.type === EventType.UPCOMING;
+  const formatTimeWithPeriod = (date: Date, includePeriod: boolean) => {
+    const hours12 = (date.getHours() % 12) || 12;
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const period = date.getHours() >= 12 ? 'pm' : 'am';
+    return includePeriod ? `${hours12}:${minutes}${period}` : `${hours12}:${minutes}`;
+  };
 
   return (
     <div 
@@ -124,14 +130,33 @@ const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) =>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
               <div className="flex items-center gap-1.5">
                 <Clock size={16} className="text-blue-500" />
-                {new Date(event.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}
+                {event.endDate ? (
+                  <>
+                    {formatTimeWithPeriod(new Date(event.date), false)}
+                    <span className="text-slate-300">-</span>
+                    {formatTimeWithPeriod(new Date(event.endDate), true)}
+                  </>
+                ) : (
+                  new Date(event.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
+                )}
               </div>
-              {event.location && (
+              {event.link ? (
+                <a
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-blue-600 transition-colors"
+                >
+                  <Video size={16} className="text-blue-500" />
+                  {event.location || 'Zoom Webinar'}
+                </a>
+              ) : event.location ? (
                 <div className="flex items-center gap-1.5">
                   <MapPin size={16} className="text-blue-500" />
                   {event.location}
                 </div>
-              )}
+              ) : null}
                <div className="flex items-center gap-1.5">
                   <User size={16} className="text-blue-500" />
                   {event.speaker.name}

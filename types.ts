@@ -14,6 +14,7 @@ export interface Event {
   id: string;
   title: string;
   date: string; // ISO date string
+  endDate?: string; // ISO date string
   type: EventType;
   speaker: Speaker;
   abstract: string;

@@ -13,7 +13,9 @@ export const formatDate = (dateString: string): string => {
 
 export const generateGoogleCalendarUrl = (event: Event): string => {
   const startDate = new Date(event.date);
-  const endDate = new Date(startDate.getTime() + 60 * 60 * 1000); // Assume 1 hour duration
+  const endDate = event.endDate
+    ? new Date(event.endDate)
+    : new Date(startDate.getTime() + 60 * 60 * 1000); // Default to 1 hour
 
   const formatDateForGoogle = (date: Date) => {
     return date.toISOString().replace(/-|:|\.\d\d\d/g, "");
@@ -22,7 +24,8 @@ export const generateGoogleCalendarUrl = (event: Event): string => {
   const start = formatDateForGoogle(startDate);
   const end = formatDateForGoogle(endDate);
 
-  const details = `Speaker: ${event.speaker.name} (${event.speaker.affiliation})\n\nAbstract: ${event.abstract}`;
+  const eventLink = event.link ? `\n\nEvent Link: ${event.link}` : '';
+  const details = `Speaker: ${event.speaker.name} (${event.speaker.affiliation})\n\nAbstract: ${event.abstract}${eventLink}`;
   
   const params = new URLSearchParams({
     action: 'TEMPLATE',
