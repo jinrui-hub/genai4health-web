@@ -112,6 +112,13 @@ export const ORGANIZERS: Organizer[] = [
     university: "UT Austin",
     imageUrl: asset('founding-members/Gregory.png'),
     website: "https://www.gholste.me/"
+  },
+  {
+    name: "Jon Tamir",
+    title: "Assistant Professor",
+    university: "UT Austin",
+    imageUrl: asset('founding-members/Tamir-Jon.jpg'),
+    website: "https://users.ece.utexas.edu/~jtamir/"
   }
 ];
 
