@@ -24,7 +24,7 @@ const Events: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Events & Seminars</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Events & Seminars 2026</h2>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
             Monthly seminars and special events featuring cutting-edge research and invited speakers in generative AI and healthcare.
           </p>
@@ -90,11 +90,25 @@ interface EventCardProps {
 
 const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) => {
   const isUpcoming = event.type === EventType.UPCOMING;
+  const timeZone = 'America/Chicago';
+  const formatEventDate = (date: Date) => {
+    return new Intl.DateTimeFormat('en-US', {
+      timeZone,
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    }).format(date);
+  };
   const formatTimeWithPeriod = (date: Date, includePeriod: boolean) => {
-    const hours12 = (date.getHours() % 12) || 12;
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const period = date.getHours() >= 12 ? 'pm' : 'am';
-    return includePeriod ? `${hours12}:${minutes}${period}` : `${hours12}:${minutes}`;
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone,
+      hour: 'numeric',
+      minute: '2-digit'
+    }).formatToParts(date);
+    const hour = parts.find((p) => p.type === 'hour')?.value || '';
+    const minute = parts.find((p) => p.type === 'minute')?.value || '';
+    const dayPeriod = (parts.find((p) => p.type === 'dayPeriod')?.value || '').toLowerCase();
+    return includePeriod ? `${hour}:${minute}${dayPeriod}` : `${hour}:${minute}`;
   };
 
   return (
@@ -130,6 +144,8 @@ const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) =>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
               <div className="flex items-center gap-1.5">
                 <Clock size={16} className="text-blue-500" />
+                <span>{formatEventDate(new Date(event.date))}</span>
+                <span className="text-slate-300">•</span>
                 {event.endDate ? (
                   <>
                     {formatTimeWithPeriod(new Date(event.date), false)}
@@ -137,8 +153,9 @@ const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) =>
                     {formatTimeWithPeriod(new Date(event.endDate), true)}
                   </>
                 ) : (
-                  new Date(event.date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
+                  formatTimeWithPeriod(new Date(event.date), true)
                 )}
+                <span className="text-slate-400">CT</span>
               </div>
               {event.link ? (
                 <a
@@ -201,14 +218,14 @@ const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) =>
       {/* Expanded Content */}
       <div 
         className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isExpanded ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+          isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-6 md:px-8 pb-8 pt-0 border-t border-slate-50">
-          <div className="grid md:grid-cols-3 gap-8 mt-6">
+          <div className="grid md:grid-cols-5 gap-8 mt-6">
             
             {/* Speaker Bio */}
-            <div className="md:col-span-1">
+            <div className="md:col-span-2">
               <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Speaker</h4>
               <div className="flex items-start gap-4">
                 <img 
@@ -225,7 +242,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, isExpanded, onToggle }) =>
             </div>
 
             {/* Abstract */}
-            <div className="md:col-span-2">
+            <div className="md:col-span-3">
               <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Abstract</h4>
               <p className="text-slate-600 leading-relaxed text-sm md:text-base">
                 {event.abstract}

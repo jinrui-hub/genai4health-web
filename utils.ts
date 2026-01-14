@@ -11,6 +11,8 @@ export const formatDate = (dateString: string): string => {
   return new Date(dateString).toLocaleDateString('en-US', options);
 };
 
+const CALENDAR_TIME_ZONE = 'America/Chicago';
+
 export const generateGoogleCalendarUrl = (event: Event): string => {
   const startDate = new Date(event.date);
   const endDate = event.endDate
@@ -33,6 +35,7 @@ export const generateGoogleCalendarUrl = (event: Event): string => {
     dates: `${start}/${end}`,
     details: details,
     location: event.location || 'Online',
+    ctz: CALENDAR_TIME_ZONE,
   });
 
   return `https://www.google.com/calendar/render?${params.toString()}`;

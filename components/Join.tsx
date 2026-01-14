@@ -17,6 +17,8 @@ const Join: React.FC = () => {
             <div className="space-y-4">
               <a 
                 href={LINKS.slack}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center justify-between p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all cursor-pointer"
               >
                 <div className="flex items-center gap-4">
@@ -41,10 +43,13 @@ const Join: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Subscribe to Our Mailing List</h3>
-                    <p className="text-sm text-slate-400">Stay informed with monthly updates, event invitations, and community news.</p>
+                    <p className="text-sm text-slate-400 select-text cursor-text">
+                      You can subscribe manually by sending an email to
+                      <span className="text-slate-200"> sympa@utlists.utexas.edu</span>{' '}
+                      with the subject line <span className="text-slate-200">subscribe ai4health</span>.
+                    </p>
                   </div>
                 </div>
-                <ArrowRight className="text-slate-500 group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>

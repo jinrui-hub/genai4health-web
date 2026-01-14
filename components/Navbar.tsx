@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
   }, []);
 
   const navLinks = [
-    { id: 'schedule', label: 'Schedule' },
+    { id: 'schedule', label: 'Events & Seminars' },
     { id: 'about', label: 'About Us' },
     { id: 'join', label: 'Join Community' },
   ];
@@ -43,9 +43,11 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
           onClick={() => handleNavClick('hero')}
           className="cursor-pointer flex items-center gap-2 group"
         >
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
-            AI
-          </div>
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="AI4Health Club"
+            className="w-8 h-8 rounded-lg shadow-lg group-hover:scale-105 transition-transform object-contain"
+          />
           <span className="font-semibold text-xl tracking-tight text-slate-900">
             AI4Health Club
           </span>

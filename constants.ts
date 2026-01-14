@@ -57,14 +57,14 @@ export const ORGANIZERS: Organizer[] = [
   },
   {
     name: "Suchi Saria",
-    title: "John C. Malone Associate Professor of Computer Science",
+    title: "John C. Malone Associate Professor",
     university: "Johns Hopkins University",
     imageUrl: asset('founding-members/suchi-saria-2.jpg'),
     website: "https://engineering.jhu.edu/faculty/suchi-saria/"
   },
   {
     name: "Fei Wang",
-    title: "Associate Professor of Population Health Sciences",
+    title: "Associate Professor",
     university: "Weill Cornell Medicine",
     imageUrl: asset('founding-members/FeiWang_1.jpeg'),
     website: "https://gradschool.weill.cornell.edu/faculty/fei-wang"
@@ -78,7 +78,7 @@ export const ORGANIZERS: Organizer[] = [
   },
   {
     name: "James Zou",
-    title: "Associate Professor of Biomedical Data Science",
+    title: "Associate Professor",
     university: "Stanford University",
     imageUrl: asset('founding-members/zou.jpg'),
     website: "https://www.james-zou.com/"
@@ -141,8 +141,8 @@ export const EVENTS: Event[] = [
   {
     id: "evt-005",
     title: "Enhancing GI Tract Cancer Diagnosis Through Generative Models and Vision-based Robotic Tactile Sensing",
-    date: "2026-01-29T13:00:00",
-    endDate: "2026-01-29T13:30:00",
+    date: "2026-01-29T13:00:00-06:00",
+    endDate: "2026-01-29T13:30:00-06:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Dr. Farshid Alambeigi",
@@ -155,37 +155,23 @@ export const EVENTS: Event[] = [
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },
   {
-    id: "evt-001",
-    title: "Large Language Models for Clinical Decision Support",
-    date: "2024-04-10T09:00:00",
+    id: "evt-test",
+    title: "Test Recording (Format Preview)",
+    date: "2024-01-01T09:00:00",
     type: EventType.PAST,
     speaker: {
-      name: "Dr. Sarah Lee",
-      affiliation: "Google DeepMind",
-      bio: "Research Scientist focusing on medical LLMs.",
+      name: "TBD",
+      affiliation: "TBD",
+      bio: "This is a placeholder to show how recordings will appear.",
       imageUrl: "https://picsum.photos/202"
     },
-    abstract: "An overview of Med-PaLM and its applications in answering USMLE style questions and providing clinical reasoning support.",
-    recordingUrl: "https://youtube.com/example"
-  },
-  {
-    id: "evt-002",
-    title: "Generative Chemistry: Accelerating Drug Discovery",
-    date: "2024-03-12T11:00:00",
-    type: EventType.PAST,
-    speaker: {
-      name: "Dr. James Wu",
-      affiliation: "NVIDIA Healthcare",
-      bio: "Lead of the BioNeMo project.",
-      imageUrl: "https://picsum.photos/203"
-    },
-    abstract: "How generative AI is reducing the timeline for small molecule generation and protein folding predictions.",
+    abstract: "A test entry to preview the layout for future recordings.",
     recordingUrl: "https://youtube.com/example"
   }
 ];
 
 export const LINKS = {
   slack: "https://join.slack.com/t/genaiforhealth/shared_invite/zt-3n3aewm9j-a91nqjPArIEIQQgIGUAVQA",
-  mailingList: "#",
+  mailingList: "mailto:sympa@utlists.utexas.edu?subject=subscribe%20ai4health",
   speakerForm: "#"
 };
