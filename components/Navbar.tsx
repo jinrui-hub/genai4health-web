@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   activeSection: string;
@@ -21,7 +21,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
   const navLinks = [
     { id: 'schedule', label: 'Events & Seminars' },
     { id: 'about', label: 'About Us' },
-    { id: 'join', label: 'Join Community' },
   ];
 
   const handleNavClick = (id: string) => {
@@ -68,13 +67,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, scrollToSection }) => {
               {link.label}
             </button>
           ))}
-          <a
-            href="#"
+          <button
+            type="button"
             className="ml-4 px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl"
             onClick={() => handleNavClick('join')}
           >
             Get Involved
-          </a>
+          </button>
         </div>
 
         {/* Mobile Toggle */}
