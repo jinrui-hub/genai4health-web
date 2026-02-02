@@ -148,7 +148,7 @@ export const EVENTS: Event[] = [
       name: "Dr. Farshid Alambeigi",
       affiliation: "The University of Texas at Austin",
       bio: "Dr. Farshid Alambeigi is an Associate Professor and the Leland Barclay Fellow in the Walker Department of Mechanical Engineering at The University of Texas at Austin. He is also a core faculty member of Texas Robotics. Dr. Alambeigi earned his Ph.D. in Mechanical Engineering (2019) and M.Sc. in Robotics (2017) from Johns Hopkins University. In 2018, he was awarded the 2019 Siebel Scholarship in recognition of his academic excellence and leadership. He is the recipient of the NIH NIBIB Trailblazer Award (2020) for his work on flexible implants and robotic systems for minimally invasive spinal fixation surgery and the NIH Director's New Innovator Award (2022) for pioneering in vivo bioprinting surgical robotics for the treatment of volumetric muscle loss. His contributions have also been recognized with the UT Austin Faculty Innovation Award, the Outstanding Research Award by an Assistant Professor, the Walker Scholar Award, and several best paper awards and recognitions. He serves as an Associate Editor for the IEEE Transactions on Robotics (TRO), IEEE Robotics and Automation Letters (RAL), and the IEEE Robotics and Automation Magazine (RAM). At UT Austin, Dr. Alambeigi directs the Advanced Robotic Technologies for Surgery (ARTS) Lab. In collaboration with the UT Dell Medical School and MD Anderson Cancer Center, the ARTS Lab advances the concept of Surgineering, engineering the surgery, by developing dexterous, intelligent robotic systems designed to partner with surgeons. The ultimate goal of this work is to enhance surgical precision, improve clinician performance, and advance patient safety and outcomes.",
-      imageUrl: asset('speakers/Farshid_Alambeigi.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Farshid_Alambeigi.jpg'
     },
     abstract: "Colonoscopy remains the gold standard for colorectal cancer screening, yet it is difficult and unintuitive to operate and relies almost entirely on vision, making subtle or early-stage polyps easy to miss. In this talk, I present a unified research platform to accelerate next-generation AI-enabled robotic colonoscopy by addressing three core gaps: improving the steerability and intuitiveness of conventional devices, advancing sensing beyond vision alone, and expanding access to data for intelligent screening. First, we robotize conventional colonoscopes with a modular add-on system that improves steerability and clinician intuitiveness without disrupting established clinical workflow. Second, we extend beyond vision-only colonoscopy by integrating an inflatable vision-based robotic tactile sensor. While its output is also camera-based, tactile interaction provides complementary cues, including polyp surface texture and local stiffness relative to surrounding tissue. Finally, to overcome limited access to diverse, well-labeled clinical data, we incorporate a generative AI module to synthesize realistic training data and improve model robustness across variations in anatomy, lighting, and pathology. Together, these components form a practical, end-to-end framework for developing, validating, and translating AI-driven robotic colonoscopy with enhanced sensing and improved generalization.",
     location: "Zoom Webinar",
@@ -164,7 +164,7 @@ export const EVENTS: Event[] = [
       name: "Hairong Wang",
       affiliation: "The University of Texas at Austin, BME",
       bio: "TBD",
-      imageUrl: asset('speakers/Hairong_Wang.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Hairong_Wang.jpg'
     },
     abstract: "TBD",
     location: "Zoom Webinar",
@@ -180,7 +180,7 @@ export const EVENTS: Event[] = [
       name: "Jiang Bian",
       affiliation: "Regenstrief Institute",
       bio: "TBD",
-      imageUrl: asset('speakers/Jiang_Bian.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Jiang_Bian.jpg'
     },
     abstract: "TBD",
     location: "Zoom Webinar",
@@ -196,7 +196,7 @@ export const EVENTS: Event[] = [
       name: "Anthony Christodoulou",
       affiliation: "UCLA",
       bio: "TBD",
-      imageUrl: asset('speakers/Anthony_Christodoulou.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Anthony_Christodoulou.jpg'
     },
     abstract: "TBD",
     location: "Zoom Webinar",
@@ -212,7 +212,7 @@ export const EVENTS: Event[] = [
       name: "Krishnaram Kenthapadi",
       affiliation: "Oracle Health",
       bio: "Krishnaram Kenthapadi is the Chief Scientist, Healthcare AI at Oracle, where he leads the AI initiatives for Clinical AI Agent and other Oracle Health products. Previously, he led AI safety, trustworthiness, and responsible AI initiatives at Fiddler AI, Amazon AWS AI, and LinkedIn, and served as LinkedIn's representative in Microsoft's AI and Ethics in Engineering and Research (AETHER) Advisory Board. Prior to that, he was a Researcher at Microsoft Research Silicon Valley Lab. Krishnaram obtained his Ph.D. in Computer Science from Stanford University in 2006. He has published 60+ papers, with 7000+ citations and filed 150+ patents, 72 of which have been granted. He has given invited talks and tutorials at leading research conferences and industry forums, and received research recognition awards.",
-      imageUrl: asset('speakers/Krishnaram_Kenthapadi.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Krishnaram_Kenthapadi.jpg'
     },
     abstract: "While generative AI models and applications have huge potential across healthcare, their successful deployment requires addressing several ethical, trustworthiness, and safety considerations. These concerns include domain‑specific evaluation, hallucinations, truthfulness and grounding, safety and alignment, bias and fairness, robustness and security, privacy and unlearning, calibration and confidence, and transparency. In this talk, we first highlight the key challenges and opportunities for AI in healthcare, and then discuss unique challenges associated with trustworthy deployment of generative AI in healthcare. Focusing on the clinical documentation use case, we present practical guidelines for applying responsible AI techniques effectively and discuss lessons learned from deploying responsible AI approaches for AI agentic applications in healthcare. In particular, we present insights from building and deploying AI agents as part of Oracle Health Clinical AI Agent.",
     location: "Zoom Webinar",
@@ -228,7 +228,7 @@ export const EVENTS: Event[] = [
       name: "Ergys Subashi",
       affiliation: "MD Anderson Cancer Center",
       bio: "TBD",
-      imageUrl: asset('speakers/Ergys_Subashi.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Ergys_Subashi.jpg'
     },
     abstract: "TBD",
     location: "Zoom Webinar",
@@ -244,7 +244,7 @@ export const EVENTS: Event[] = [
       name: "Radu Marculescu",
       affiliation: "The University of Texas at Austin",
       bio: "TBD",
-      imageUrl: asset('speakers/Radu_Marculescu.jpg')
+      imageUrl: '/AI4HealthClub/speakers/Radu_Marculescu.jpg'
     },
     abstract: "TBD",
     location: "Zoom Webinar",
