@@ -1,13 +1,12 @@
 import { Event, EventType, Organizer, Workshop } from './types';
 
 const asset = (relativePath: string) => {
-  // In Vite, public folder contents are served from root
+  // For deployment at /AI4HealthClub/, we need to use this base path
+  // BASE_URL from import.meta.env may not be correctly replaced in all cases
+  const basePath = '/AI4HealthClub';
   // Remove leading slash if present to avoid double slashes
   const path = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-  // In development, BASE_URL is '/', in production it might be different
-  const base = import.meta.env.BASE_URL || '/';
-  const normalizedBase = base.endsWith('/') ? base.slice(0, -1) : base;
-  return `${normalizedBase}/${path}`;
+  return `${basePath}/${path}`;
 };
 
 export const CHAIRS: Organizer[] = [
