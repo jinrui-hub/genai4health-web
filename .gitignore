@@ -9,6 +9,7 @@ coverage/
 # Production
 dist/
 build/
+dist-ssr/
 
 # Misc
 .DS_Store
@@ -16,6 +17,7 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+*.local
 
 # Logs
 npm-debug.log*
@@ -26,3 +28,13 @@ yarn-error.log*
 .cache/
 *.cache
 node_modules/.cache/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
