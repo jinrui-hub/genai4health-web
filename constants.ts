@@ -157,17 +157,17 @@ export const EVENTS: Event[] = [
   },
   {
     id: "evt-006",
-    title: "TBD",
+    title: "Knowledge-Informed Weakly-Supervised Deep Learning Models for Cancer Applications",
     date: "2026-02-12T13:00:00-06:00",
     endDate: "2026-02-12T13:30:00-06:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Hairong Wang",
       affiliation: "The University of Texas at Austin, BME",
-      bio: "TBD",
+      bio: "Hairong Wang is an Assistant Professor in the Operations Research & Industrial Engineering program at UT Austin. Her research focuses on the development of machine learning models and algorithms for high-dimensional, multi-modal data with complex, heterogeneous structures. In particular, she develops data-driven methodologies for building and training machine learning models with data and computational efficiency, interpretability, generalizability, and robustness, and propose principled approaches to fuse domain knowledge into model design for supporting clinical diagnosis and optimal treatment in high-stake scenarios. Hairong received her PhD in Operations Research from the School of Industrial and Systems Engineering at Georgia Tech. Prior to joining Georgia Tech, she received her BA in Mathematics from University of Oxford.",
       imageUrl: asset('speakers/Hairong_Wang.jpg')
     },
-    abstract: "TBD",
+    abstract: "Within the past decade, the unprecedented capability of modern deep learning (DL) models has been undoubtedly proven on large dataset. It is therefore suggested that, thanks to its computational power and versatility, DL possesses substantial potential for analyzing healthcare data, thereby significantly enhancing diagnosis, prognosis, and treatment planning. Healthcare data, on the other hand, possess unique properties distinct from commonly used DL benchmarks. Notably, due to the invasive nature and high expense of direct diagnosis, accurate healthcare data are often scarce, rendering off-the-shelf DL models largely ineffective in high-stakes applications. In this talk, I will discuss my recent developments on addressing these constraints by advancing knowledge-informed, image-based DL methodologies, which improve sample efficiency, predictive accuracy, and generalizability for real-world cancer applications. Such approaches systematically integrate biological, anatomical, and clinical domain knowledge into DL pipelines to overcome data scarcity and heterogeneity in cancer imaging. Across applications in glioblastoma and liver cancer, the methods demonstrate substantial improvements in generalizability and precision, showing strong potential to support personalized diagnosis, prognosis, treatment planning, and monitoring in precision oncology.",
     location: "Zoom Webinar",
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },

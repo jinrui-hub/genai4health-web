@@ -1,3 +1,9 @@
+#!/bin/zsh
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+cat > "$ROOT_DIR/index.html" <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,9 +22,18 @@
       ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
       ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
-    <script type="module" crossorigin src="/AI4HealthClub/assets/index-D6CyUm06.js"></script>
   </head>
   <body class="bg-white text-slate-900 selection:bg-blue-100 selection:text-blue-900">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
+EOF
+
+cd "$ROOT_DIR"
+VITE_BASE_PATH=/AI4HealthClub/ npm run build
+
+rm -rf assets
+cp -R dist/* .
+
+echo "Build complete. Static files updated."
