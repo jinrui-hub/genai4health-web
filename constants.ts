@@ -173,17 +173,17 @@ export const EVENTS: Event[] = [
   },
   {
     id: "evt-007",
-    title: "TBD",
+    title: "Real-World Data to Real-World Evidence with some AI: Successes, Challenges, and Opportunities",
     date: "2026-02-26T13:00:00-06:00",
     endDate: "2026-02-26T13:30:00-06:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Jiang Bian",
       affiliation: "Regenstrief Institute",
-      bio: "TBD",
+      bio: "Dr. Bian specializes in biomedical informatics and health data science—interdisciplinary fields focused on leveraging data, information, and knowledge to drive scientific discovery, problem-solving, and decision-making aimed at improving human health. Dr. Bian brings extensive experience in developing real-world data infrastructure, informatics tools, and systems, as well as applying advanced AI and data science methods to analyze and interpret multimodal clinical and biomedical data. Dr. Bian is the Chief Research Information Officer of the IU Melvin and Bren Simon Comprehensive Cancer Center. In addition, he serves as Chief Data Scientist at the Regenstrief Institute, Chief Data Scientist at IU Health, Associate Dean of Data Science and Vice Chair for Translational Informatics in the Department of Biostatistics and Health Data Science at the IU School of Medicine, and Deputy Director of the Indiana Clinical and Translational Sciences Institute (CTSI) at the Regenstrief Institute.",
       imageUrl: asset('speakers/Jiang_Bian.jpg')
     },
-    abstract: "TBD",
+    abstract: "This presentation examines practical methods—and some AI tools—for transforming real-world data (RWD) into credible real-world evidence (RWE). It highlights the central role of data science in overcoming common obstacles in electronic health records (EHR) and claims data (e.g., missingness, measurement error, and coding variability). Using case studies focused on GLP-1 receptor agonists (GLP-1RAs), the talk illustrates how rigorous study design and causal inference—particularly target trial emulation—can be used to assess the effectiveness and safety of GLP-1RAs.  The presentation emphasizes when and how RWE can complement randomized controlled trials—and where it can mislead without careful attention to potential biases, many of which originate from data limitations.",
     location: "Zoom Webinar",
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },
