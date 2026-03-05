@@ -189,17 +189,17 @@ export const EVENTS: Event[] = [
   },
   {
     id: "evt-008",
-    title: "TBD",
+    title: "Generative magnetic resonance multitasking: patient-specific AI models for high-dimensional imaging",
     date: "2026-03-12T13:00:00-06:00",
     endDate: "2026-03-12T13:30:00-06:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Anthony Christodoulou",
       affiliation: "UCLA",
-      bio: "TBD",
+      bio: "Anthony Christodoulou is an Associate Professor of Radiology, Bioengineering, and Physics & Biology in Medicine at the University of California, Los Angeles (UCLA). Previously, he was Associate Professor of Biomedical Sciences and the Director of Magnetic Resonance Technology Innovations for the Biomedical Imaging Research Institute at Cedars-Sinai Medical Center (CSMC). He received his Ph.D. in Electrical and Computer Engineering from the University of Illinois at Urbana-Champaign (UIUC) and his B.S. and M.S. degrees in Electrical Engineering from the University of Southern California (USC). Prof. Christodoulou’s research laboratory develops and translates novel magnetic resonance imaging (MRI) techniques through innovations in MR physics, artificial intelligence, and image reconstruction. His group’s primary focus is on multidimensional quantitative imaging methods for the diagnosis, risk prediction, and treatment monitoring of cardiovascular diseases and cancer.",
       imageUrl: asset('speakers/Anthony_Christodoulou.jpg')
     },
-    abstract: "TBD",
+    abstract: "Magnetic resonance imaging (MRI) is a cornerstone of noninvasive clinical diagnosis. Imaging moving organs like the heart remains challenging because cardiac motion, respiratory motion, and contrast and physical dynamics overlap during acquisition. Recent high-dimensional cardiac imaging frameworks address this by modeling the image as a high-dimensional function of multiple independent, time-varying factors. They treat motion states and contrast-related sequence parameters as separate coordinates. This seminar presents an AI approach, Generative MR Multitasking, that represents images in a learnable, interpretable latent space. It uses scan-specific conditional generative models conditioned on known pulse-sequence timing parameters, which encourages the latent variables to encode interpretable motion states. The approach yields flexible, scan-specific models of patient motion and physical dynamics. These models can represent and quantify physical processes despite cardiac and respiratory motion.",
     location: "Zoom Webinar",
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },
