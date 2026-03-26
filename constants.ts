@@ -190,8 +190,8 @@ export const EVENTS: Event[] = [
   {
     id: "evt-008",
     title: "Generative magnetic resonance multitasking: patient-specific AI models for high-dimensional imaging",
-    date: "2026-03-12T13:00:00-06:00",
-    endDate: "2026-03-12T13:30:00-06:00",
+    date: "2026-03-12T13:00:00-05:00",
+    endDate: "2026-03-12T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Anthony Christodoulou",
@@ -206,8 +206,8 @@ export const EVENTS: Event[] = [
   {
     id: "evt-009",
     title: "Trustworthy Health AI: Challenges & Lessons Learned",
-    date: "2026-03-26T13:00:00-06:00",
-    endDate: "2026-03-26T13:30:00-06:00",
+    date: "2026-03-26T13:00:00-05:00",
+    endDate: "2026-03-26T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Krishnaram Kenthapadi",
@@ -222,8 +222,8 @@ export const EVENTS: Event[] = [
   {
     id: "evt-010",
     title: "TBD",
-    date: "2026-04-09T13:00:00-06:00",
-    endDate: "2026-04-09T13:30:00-06:00",
+    date: "2026-04-09T13:00:00-05:00",
+    endDate: "2026-04-09T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Ergys Subashi",
@@ -238,8 +238,8 @@ export const EVENTS: Event[] = [
   {
     id: "evt-011",
     title: "TBD",
-    date: "2026-04-23T13:00:00-06:00",
-    endDate: "2026-04-23T13:30:00-06:00",
+    date: "2026-04-23T13:00:00-05:00",
+    endDate: "2026-04-23T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Radu Marculescu",
