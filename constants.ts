@@ -221,33 +221,33 @@ export const EVENTS: Event[] = [
   },
   {
     id: "evt-010",
-    title: "TBD",
+    title: "Adaptive Radiation Therapy at Scale: Clinical Necessity or Selective Application?",
     date: "2026-04-09T13:00:00-05:00",
     endDate: "2026-04-09T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Ergys Subashi",
       affiliation: "MD Anderson Cancer Center",
-      bio: "TBD",
+      bio: "Dr. Ergys D. Subashi is an associate professor in the Department of Radiation Physics at MD Anderson Cancer Center. His work is focused on MRI-guided adaptive radiation therapy, with an emphasis on developing imaging methods that improve tumor delineation, treatment planning, and real-time monitoring of anatomical changes during therapy. His research includes techniques that characterize motion and functional heterogeneity in tumors, enabling more precise and individualized radiation therapy. In his clinical role, Dr/ Subashi focuses on treatment planning, workflow optimization, and quality assurance for MR-linac systems, addressing uncertainties related to patient motion, imaging performance, and treatment delivery. His work aims to enhance the safety, accuracy, and robustness of MRI-guided radiotherapy, particularly in anatomically complex regions such as the abdomen and pelvis.",
       imageUrl: asset('speakers/Ergys_Subashi.jpg')
     },
-    abstract: "TBD",
+    abstract: "Adaptive radiation therapy improves treatment precision by accounting for geometric and functional changes in patient anatomy, enabling better target coverage and sparing of normal tissue. However, routine adaptation is challenging due to workflow complexity, time constraints, staffing demands, and stringent quality assurance requirements. This talk reviews our work on implementation of adaptive MR-guided radiotherapy and discusses how AI-driven tools—such as auto-contouring, rapid planning, and decision support—can streamline workflows to support a safe and scalable implementation of daily adaptive radiotherapy.",
     location: "Zoom Webinar",
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },
   {
     id: "evt-011",
-    title: "TBD",
+    title: "Efficient Medical Image Segmentation Across the Pipeline",
     date: "2026-04-23T13:00:00-05:00",
     endDate: "2026-04-23T13:30:00-05:00",
     type: EventType.UPCOMING,
     speaker: {
       name: "Radu Marculescu",
       affiliation: "The University of Texas at Austin",
-      bio: "TBD",
+      bio: "Radu Marculescu is a Professor and the Laura Jennings Turner Chair in Engineering in the Department of Electrical and Computer Engineering at The University of Texas at Austin. Between 2000-2019, he was a Professor in the Electrical and Computer Engineering department at Carnegie Mellon University. His current research focuses on developing AI/ML algorithms for computer vision, bioimaging, and Internet-of-Things (IoT) applications. He is an IEEE Fellow, an ACM Fellow, and an AAAS Fellow. More info available here: http://radum.ece.utexas.edu.",
       imageUrl: asset('speakers/Radu_Marculescu.jpg')
     },
-    abstract: "TBD",
+    abstract: "Medical image segmentation is a central problem in AI for health, but improvements in accuracy often come with growing computational and memory costs. This talk presents a recent line of work on efficient segmentation across the pipeline, showing how efficiency can be built directly into decoding, 3D network design, and multi-scale prediction fusion. Rather than treating efficiency as a post hoc constraint or compression step, I will argue that it can serve as a core design principle. By rethinking where computation is most valuable, we can build segmentation models that remain accurate while also improving scalability, inference speed, and practical deployability across a range of real-world medical imaging settings.",
     location: "Zoom Webinar",
     link: "https://utexas.zoom.us/j/87121024650?pwd=kkV0qG3NF7BkeuOHL7bHWeIO4nB0Uv.1"
   },
